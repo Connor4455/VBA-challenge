@@ -67,7 +67,7 @@ Dim ws As Worksheet
         Next i
         
         yearly_change_last_row = Cells(Rows.Count, 9).End(xlUp).row
-        ' Set the Cell Colors
+
         For j = 2 To yearly_change_last_row
             If (Cells(j, 10).Value > 0 Or Cells(j, 10).Value = 0) Then
                 Cells(j, 10).Interior.ColorIndex = 10
